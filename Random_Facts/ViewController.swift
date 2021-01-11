@@ -7,7 +7,7 @@
 
 import UIKit
 
-var coloursOn: Bool = true
+var coloursOn: Bool = UserDefaults.standard.bool(forKey: "coloursOn")
 
 class ViewController: UIViewController {
 
@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet var reloadButtonOutlet: UIBarButtonItem!
     
     var facts: [fact] = []
-    let randomFactAPI = "https://uselessfacts.jsph.pl/random.json?language=en"
+    let randomFactAPI = "https://uselessfacts.jsph.pl/random.json?language=en" //api to call to
     
     var bufferCheck = 1
     let colours: [UIColor] = [UIColor(red: 192/255, green: 255/255, blue: 74/255, alpha: 1), UIColor(red: 255/255, green: 158/255, blue: 84/255, alpha: 1), UIColor(red: 255/255, green: 77/255, blue: 77/255, alpha: 1), UIColor(red: 255/255, green: 252/255, blue: 77/255, alpha: 1), UIColor(red: 87/255, green: 255/255, blue: 174/255, alpha: 1), UIColor(red: 233/255, green: 143/255, blue: 255/255, alpha: 1), UIColor(red: 120/255, green: 205/255, blue: 255/255, alpha: 1), UIColor(red: 120/255, green: 142/255, blue: 255/255, alpha: 1)]
@@ -27,6 +27,12 @@ class ViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(tooManyAttempts), name: Notification.Name("TooManyAttempts"), object: nil)
         
         reloadButtonOutlet.isEnabled = true
+        
+        if isFirstTimeOpening() == true
+        {
+            coloursOn = true
+            UserDefaults.standard.setValue(coloursOn, forKey: "coloursOn")
+        }
         
         previousColour = Int.random(in: 0...colours.count - 1)
         getResponse(urlString: randomFactAPI)
@@ -121,6 +127,17 @@ class ViewController: UIViewController {
                 
             }.resume()
         }
+    }
+    
+    func isFirstTimeOpening() -> Bool {
+      let defaults = UserDefaults.standard
+
+      if(defaults.integer(forKey: "hasRun") == 0) {
+          defaults.set(1, forKey: "hasRun")
+          return true
+      }
+      return false
+
     }
     
     struct fact: Decodable

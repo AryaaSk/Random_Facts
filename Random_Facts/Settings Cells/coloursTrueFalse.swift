@@ -31,6 +31,7 @@ class coloursTrueFalse: UITableViewCell {
         {
             coloursOn = false
         }
+        UserDefaults.standard.setValue(coloursOn, forKey: "coloursOn")
         print(coloursOn)
     }
 }
