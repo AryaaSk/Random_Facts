@@ -7,3 +7,5 @@ Unfortunately the app is not on the app store, but you can just download it and 
 
 Here are some previews:
 
+![Preview1](https://github.com/AryaaSk/Random_Facts/blob/main/Random_Facts/Previews/RandomFactsPreviews.png?raw=true)
+
