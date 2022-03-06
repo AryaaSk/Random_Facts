@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E455D83927D4B14800EE65C6 /* Simulator Screen Shot - iPhone 13 mini - 2022-03-06 at 09.06.28.png in Resources */ = {isa = PBXBuildFile; fileRef = E455D83627D4B14800EE65C6 /* Simulator Screen Shot - iPhone 13 mini - 2022-03-06 at 09.06.28.png */; };
+		E455D83A27D4B14800EE65C6 /* Simulator Screen Shot - iPhone 13 mini - 2022-03-06 at 09.06.46.png in Resources */ = {isa = PBXBuildFile; fileRef = E455D83727D4B14800EE65C6 /* Simulator Screen Shot - iPhone 13 mini - 2022-03-06 at 09.06.46.png */; };
+		E455D83B27D4B14800EE65C6 /* Simulator Screen Shot - iPhone 13 mini - 2022-03-06 at 09.06.22.png in Resources */ = {isa = PBXBuildFile; fileRef = E455D83827D4B14800EE65C6 /* Simulator Screen Shot - iPhone 13 mini - 2022-03-06 at 09.06.22.png */; };
+		E455D84127D4B24300EE65C6 /* RandomFactsPreviews.png in Resources */ = {isa = PBXBuildFile; fileRef = E455D84027D4B24300EE65C6 /* RandomFactsPreviews.png */; };
 		E48AFC8C25AC8B4F00D50BCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48AFC8B25AC8B4F00D50BCF /* AppDelegate.swift */; };
 		E48AFC8E25AC8B4F00D50BCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48AFC8D25AC8B4F00D50BCF /* SceneDelegate.swift */; };
 		E48AFC9025AC8B4F00D50BCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48AFC8F25AC8B4F00D50BCF /* ViewController.swift */; };
@@ -18,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E455D83627D4B14800EE65C6 /* Simulator Screen Shot - iPhone 13 mini - 2022-03-06 at 09.06.28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 13 mini - 2022-03-06 at 09.06.28.png"; sourceTree = "<group>"; };
+		E455D83727D4B14800EE65C6 /* Simulator Screen Shot - iPhone 13 mini - 2022-03-06 at 09.06.46.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 13 mini - 2022-03-06 at 09.06.46.png"; sourceTree = "<group>"; };
+		E455D83827D4B14800EE65C6 /* Simulator Screen Shot - iPhone 13 mini - 2022-03-06 at 09.06.22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone 13 mini - 2022-03-06 at 09.06.22.png"; sourceTree = "<group>"; };
+		E455D84027D4B24300EE65C6 /* RandomFactsPreviews.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RandomFactsPreviews.png; sourceTree = "<group>"; };
 		E48AFC8825AC8B4F00D50BCF /* Random_Facts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Random_Facts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E48AFC8B25AC8B4F00D50BCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E48AFC8D25AC8B4F00D50BCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +49,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E455D83527D4B13C00EE65C6 /* Previews */ = {
+			isa = PBXGroup;
+			children = (
+				E455D84027D4B24300EE65C6 /* RandomFactsPreviews.png */,
+				E455D83827D4B14800EE65C6 /* Simulator Screen Shot - iPhone 13 mini - 2022-03-06 at 09.06.22.png */,
+				E455D83627D4B14800EE65C6 /* Simulator Screen Shot - iPhone 13 mini - 2022-03-06 at 09.06.28.png */,
+				E455D83727D4B14800EE65C6 /* Simulator Screen Shot - iPhone 13 mini - 2022-03-06 at 09.06.46.png */,
+			);
+			path = Previews;
+			sourceTree = "<group>";
+		};
 		E48AFC7F25AC8B4F00D50BCF = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +79,7 @@
 		E48AFC8A25AC8B4F00D50BCF /* Random_Facts */ = {
 			isa = PBXGroup;
 			children = (
+				E455D83527D4B13C00EE65C6 /* Previews */,
 				E48AFC8B25AC8B4F00D50BCF /* AppDelegate.swift */,
 				E48AFC8D25AC8B4F00D50BCF /* SceneDelegate.swift */,
 				E48AFC8F25AC8B4F00D50BCF /* ViewController.swift */,
@@ -138,7 +158,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E455D84127D4B24300EE65C6 /* RandomFactsPreviews.png in Resources */,
+				E455D83A27D4B14800EE65C6 /* Simulator Screen Shot - iPhone 13 mini - 2022-03-06 at 09.06.46.png in Resources */,
 				E48AFC9825AC8B5000D50BCF /* LaunchScreen.storyboard in Resources */,
+				E455D83927D4B14800EE65C6 /* Simulator Screen Shot - iPhone 13 mini - 2022-03-06 at 09.06.28.png in Resources */,
+				E455D83B27D4B14800EE65C6 /* Simulator Screen Shot - iPhone 13 mini - 2022-03-06 at 09.06.22.png in Resources */,
 				E48AFC9525AC8B5000D50BCF /* Assets.xcassets in Resources */,
 				E48AFC9325AC8B4F00D50BCF /* Main.storyboard in Resources */,
 			);

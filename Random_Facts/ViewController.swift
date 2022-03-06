@@ -40,6 +40,11 @@ class ViewController: UIViewController {
     
     @IBAction func reloadButton(_ sender: Any) {
         bufferCheck += 1
+        
+        //provide haptic feedback
+        let generator = UIImpactFeedbackGenerator(style: .rigid)
+        generator.impactOccurred()
+        
         getResponse(urlString: randomFactAPI)
         facts.remove(at: 0) //so the list doesnt become really large
     }
