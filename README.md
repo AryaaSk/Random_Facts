@@ -1,4 +1,4 @@
-# Random_Facts
+# Random Facts
 Just a small app that gives you a random fact every time you click a button
 
 You can toggle the colours on and off.
